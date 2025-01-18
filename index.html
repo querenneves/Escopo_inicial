@@ -251,6 +251,130 @@
             color: #C13584;
             /* Cor ao passar o mouse */
         }
+
+        .avaliacoes-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            /* Espaçamento entre os avaliacoes
+  s */
+        }
+
+        .avaliacoes {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff;
+            display: inline-block;
+        }
+
+        .avaliacoes:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .rating i {
+            color: gold;
+            font-size: 20px;
+            margin: 0 2px;
+        }
+
+        .review-text {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .profile .google-logo {
+            position: absolute;
+            top: 100%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .name {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .date {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .avaliacoes {
+                width: 100%;
+                /* Faz a avaliação ocupar 100% da largura disponível */
+                margin: 10px 0;
+                /* Ajusta a margem entre as avaliações */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .avaliacoes {
+                width: 100%;
+                /* Garante que ocupe toda a largura da tela */
+                padding: 15px;
+                /* Ajusta o padding para telas pequenas */
+            }
+
+            .profile img {
+                width: 80px;
+                /* Reduz o tamanho da imagem do perfil */
+                height: 80px;
+            }
+
+            .profile .google-logo {
+                width: 15px;
+                /* Reduz o tamanho do logo do Google */
+                height: 15px;
+            }
+
+            .rating i {
+                font-size: 18px;
+                /* Ajusta o tamanho das estrelas */
+            }
+
+            .review-text,
+            .name,
+            .date {
+                font-size: 14px;
+                /* Ajusta o tamanho do texto */
+            }
+        }
     </style>
 </head>
 
@@ -929,39 +1053,115 @@
                 </div>
             </center>
             <script async src="//www.instagram.com/embed.js"></script>
-            <div class="footer-container">
-                <footer class="bg-body-tertiary text-center">
-                    <div class="container p-4 pb-0">
-                        </a>
-                        <a class="btn text-white btn-floating m-1"
-                            style="background-color: #0082ca; border: 2px solid white;"
-                            href="https://www.linkedin.com/in/lucianalima1102/" role="button">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="btn text-white btn-floating m-1"
-                            style="background-color: #FF0000; border: 2px solid white;"
-                            href="https://www.youtube.com/channel/UCK8xgEKPYxXnK1FZQYogc4A" role="button"
-                            target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+            <div class="master_sobre">
+                <div class="sub_sobre" style="margin: 20px 40px 20px 40px;">
+                    <div class="text_sobre" style="margin-right: 20px;">
+                        <h1>Depoimentos</h1>
+                        <hr>
+                        <div class="avaliacoes-wrapper">
+                            <div class="avaliacoes-container"></div>
+                            <div class="avaliacoes">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-text">
+                                    A Lu é uma profissional incrível! Muito correta, responsável e cuidadosa comigo.
+                                    Estamos juntas no processo terapêutico há 3 anos e desde então as coisas só
+                                    melhoraram. E, além da terapia em si, a Lu tem diversos conteúdos muito legais que
+                                    já tive o prazer de participar, como o workshop relacionado ao empoderamento e auto
+                                    estima feminina.
+                                    Recomendo muito! 🥰
+                                </div>
+                                <div class="profile">
+                                    <img src="img/depoimento_p.png" alt="Profile Image">
+                                    <img src="img/google.webp" alt="Google Logo" class="google-logo">
+                                </div>
+                                <div class="name">Patrícia Bazzo</div>
+                                <div class="date">Um ano atrás</div>
+                            </div>
 
+                            <div class="avaliacoes">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-text">
+                                    Estou no processo de terapia a três anos com a Lu. Cada semana ela faz com que eu me
+                                    entenda melhor e a lidar com as situações da vida. Criamos uma ótima parceria ao
+                                    longo dos anos com um ambiente seguro, sem julgamentos e com muito cuidado e
+                                    sinceridade.
+                                </div>
+                                <div class="profile">
+                                    <img src="img/depoimento_m.png" alt="Profile Image">
+                                    <img src="img/google.webp" alt="Google Logo" class="google-logo">
+                                </div>
+                                <div class="name">Mariana Lima Araújo</div>
+                                <div class="date">Um ano atrás</div>
+                            </div>
+
+                            <div class="avaliacoes">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-text">
+                                    A terapia com a Luciana tem sido uma experiência maravilhosa. Estou neste
+                                    acompanhamento desde outubro de 2020 e durante este tempo tenho vivido bons
+                                    momentos, onde a escuta e acolhimento tem sido de suma importância para a minha
+                                    vida, me auxiliando com o tratamento para a bipolaridade e me ajudando a me
+                                    autoconhecer e melhorar os meus relacionamentos interpessoais.
+                                </div>
+                                <div class="profile">
+                                    <img src="img/depoimento_m2.png" alt="Profile Image">
+                                    <img src="img/google.webp" alt="Google Logo" class="google-logo">
+                                </div>
+                                <div class="name">Maria Eterna</div>
+                                <div class="date">Um ano atrás</div>
+                            </div>
+                        </div>
+                        <div class="footer-container">
+                            <footer class="bg-body-tertiary text-center">
+                                <div class="container p-4 pb-0">
+                                    </a>
+                                    <a class="btn text-white btn-floating m-1"
+                                        style="background-color: #0082ca; border: 2px solid white;"
+                                        href="https://www.linkedin.com/in/lucianalima1102/" role="button">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a class="btn text-white btn-floating m-1"
+                                        style="background-color: #FF0000; border: 2px solid white;"
+                                        href="https://www.youtube.com/channel/UCK8xgEKPYxXnK1FZQYogc4A" role="button"
+                                        target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+
+                                </div>
+
+                        </div>
+                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                            <span class="footer-text">Feito com ♥️ por Qneves</span>
+                        </div>
+                        </footer>
                     </div>
+
+                    <script async src="//www.instagram.com/embed.js"></script>
+
+                </div>
+
             </div>
-
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-                <span class="footer-text">Feito com ♥️ por Qneves</span>
-            </div>
-            </footer>
-        </div>
-
-        <script async src="//www.instagram.com/embed.js"></script>
-
-    </div>
-
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

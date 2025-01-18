@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+    }
+
+    .avaliacoes -wrapper {
+      display: flex;
+      gap: 20px;
+      /* Espaçamento entre os avaliacoes
+  s */
+    }
+
+    .avaliacoes {
+      width: 300px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+
+    .avaliacoes:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .rating i {
+      color: gold;
+      font-size: 20px;
+      margin: 0 2px;
+    }
+
+    .review-text {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .profile .google-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+    }
+
+    .name {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .date {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="avaliacoes-wrapper">
+    <div class="avaliacoes">
+      <div class="rating">
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+      </div>
+      <div class="review-text">
+        Profissional muito responsável e
+        competente. Sempre disposta a colaborar com o bem-estar de seus pacientes. Ela é atenta e dedicada.
+      </div>
+      <div class="profile">
+        <img src="profile-image.png" alt="Profile Image">
+      </div>
+      <div class="name">Daiane Luz Pereira</div>
+      <div class="date">2022-06-27</div>
+    </div>
+
+    <div class="avaliacoes">
+      <div class="rating">
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+      </div>
+      <div class="review-text">
+        Atendimento excelente, sempre atenta às necessidades de seus clientes. Recomendo fortemente!
+      </div>
+      <div class="profile">
+        <img src="profile-image2.png" alt="Profile Image">
+      </div>
+      <div class="name">Maria Clara Souza</div>
+      <div class="date">2022-07-10</div>
+    </div>
+
+    <div class="avaliacoes">
+      <div class="rating">
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+        <i class="fas fa-star">★</i>
+      </div>
+      <div class="review-text">
+        Sempre pontual e muito profissional. Um exemplo de dedicação e cuidado com o trabalho.
+      </div>
+      <div class="profile">
+        <img src="profile-image3.png" alt="Profile Image">
+      </div>
+      <div class="name">João Pedro Lima</div>
+      <div class="date">2022-08-15</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
