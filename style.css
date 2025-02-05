@@ -358,15 +358,16 @@ a {
 /* Responsivo */
 @media (max-width: 768px) {
   .sub_infop {
-      flex-direction: column;
-      text-align: center;
-  }
+    flex-direction: column;
+    text-align: center;
+}
 
-  .text_infop {
-      padding: 0;
-      width: 100%;
-  }
-
+.text_infop {
+    padding: 15px; /* Adiciona espaçamento interno */
+    width: 90%; /* Deixa um respiro nas laterais */
+    margin: 0 auto; /* Centraliza o texto */
+    line-height: 1.6; /* Melhora a leitura */
+}
   .image_infop {
       justify-content: center; /* Centraliza a imagem no mobile */
       width: 100%;
