@@ -78,7 +78,50 @@ a {
   gap: 20px;
   padding: 20px;
 }
+.contratar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(-45deg, #e0d1ed 0%, #f0b9cf 50%, #f0b9cf 100%);
+  border-radius: 10px;
+}
 
+.sub-c {
+  flex: 1;
+  min-width: 260px;
+  max-width: 300px;
+  background: #ffffff57;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sub-c:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tip {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.second-text {
+  font-size: 14px;
+  color: #000;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .contratar {
+      flex-direction: column;
+      align-items: center;
+  }
+}
 .card {
   flex: 1;
   min-width: 260px; /* Define um valor mínimo para que os cards não fiquem muito pequenos */
@@ -327,7 +370,20 @@ a {
   flex: 2;
   text-align: left;
   padding-right: 30px;
+  word-wrap: break-word; /* Quebra palavras longas */
+  overflow-wrap: break-word; /* Garante que palavras longas sejam quebradas */
+  max-width: 100%; /* Evita que o texto ultrapasse a largura do contêiner */
 }
+@media (max-width: 768px) {
+  .text_infop {
+    width: 90%; /* Faz o texto ocupar quase toda a largura da tela */
+    text-align: center; /* Centraliza o texto */
+    padding: 0; /* Remove margens extras */
+    margin: 0 auto; /* Garante que o elemento fique centralizado */
+  }
+}
+
+
 
 .image_infop {
   flex: 1;
@@ -376,6 +432,38 @@ a {
 
   .image_infop img {
       max-width: 350px; /* Mantém a imagem menor no mobile */
+  }
+}
+.extra {
+  width: 100%;
+  margin: 0 auto;
+  padding:0px;
+}
+
+@media (max-width: 768px) {
+    .extra h1 {
+    width: 90%; /* Garante que o título ocupe toda a largura disponível */
+    margin: 0; /* Centraliza o título */
+    text-align: left; /* Centraliza o texto */
+    font-size: 17px; /* Ajusta o tamanho da fonte para caber na linha */
+    white-space: nowrap; /* Impede a quebra de linha */
+    overflow: hidden; /* Garante que o texto não ultrapasse a largura */
+    padding: 10px 0; /* Adiciona espaçamento acima e abaixo do título */
+    font-weight: bold;
+  }
+  .extra ul {
+    width: 100%; /* Faz a lista ocupar toda a largura da tela */
+    margin: 0 auto; /* Centraliza a lista */
+    padding: 0; /* Remove padding extra */
+    list-style-type: disc; /* Garante que as bolinhas apareçam */
+    list-style-position: inside; /* Garante que as bolinhas fiquem dentro da lista */
+  }
+
+  .extra li {
+    display: list-item; /* Garante que os itens da lista sejam exibidos corretamente */
+    text-align: left; /* Alinha o texto à direita */
+    padding: 5px 0; /* Adiciona espaçamento entre os itens */
+    white-space: nowrap; /* Evita quebra de palavras */
   }
 }
 
