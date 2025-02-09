@@ -386,17 +386,11 @@ a {
 
 
 .image_infop {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end; /* Mantém a imagem à direita */
-  align-items: center;
-  max-width: 700px; /* Garante um espaço fixo para a imagem */
+  max-width: 300px; /* Garante um espaço fixo para a imagem */
 }
 
 .image_infop img {
-  width: 100%;
-  max-width: 700px; /* Aumentei o tamanho da imagem */
-  height: auto;
+  max-width: 300px; /* Aumentei o tamanho da imagem */
   border-radius: 10px;
   animation: flutuar 3s ease-in-out infinite;
 }
@@ -426,7 +420,6 @@ a {
 }
   .image_infop {
       justify-content: center; /* Centraliza a imagem no mobile */
-      width: 100%;
       margin-top: 20px;
   }
 
