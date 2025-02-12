@@ -233,29 +233,29 @@
 
 
         .insta {
-			font-size: 30px;
-			/* Tamanho do ícone */
-			color: #E1306C;
-			/* Cor do ícone do Instagram */
-			text-decoration: none;
-			/* Remove o sublinhado do link */
-			transition: color 0.3s;
-			/* Transição suave para mudança de cor */
-			position: fixed;
-			/* Permite que o elemento fique fixo na tela */
-			right: 20px;
-			/* Distância da borda direita */
-			top: 20px;
-			/* Distância do topo (ajuste conforme necessário) */
-			z-index: 1000;
-			/* Garante que o ícone fique acima de outros elementos */
-		}
+            font-size: 30px;
+            /* Tamanho do ícone */
+            color: #E1306C;
+            /* Cor do ícone do Instagram */
+            text-decoration: none;
+            /* Remove o sublinhado do link */
+            transition: color 0.3s;
+            /* Transição suave para mudança de cor */
+            position: fixed;
+            /* Permite que o elemento fique fixo na tela */
+            right: 20px;
+            /* Distância da borda direita */
+            top: 20px;
+            /* Distância do topo (ajuste conforme necessário) */
+            z-index: 1000;
+            /* Garante que o ícone fique acima de outros elementos */
+        }
 
-		/* Efeito de hover (opcional) */
-		.insta:hover {
-			color: #C13584;
-			/* Cor ao passar o mouse */
-		}
+        /* Efeito de hover (opcional) */
+        .insta:hover {
+            color: #C13584;
+            /* Cor ao passar o mouse */
+        }
 
 
         .avaliacoes-wrapper {
@@ -376,41 +376,54 @@
     <div class="hero-container" style="background-image: url('img/principal.png');">
         <div class="hero-content">
         </div>
-        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511987966258&text=Agende%20j%C3%A1">
-  <div class="rwb-tooltip">Agende já</div>
-  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-</a>
+        <link rel="stylesheet"
+            href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        <a id="robbu-whatsapp-button" target="_blank"
+            href="https://api.whatsapp.com/send?phone=5511987966258&text=Agende%20j%C3%A1">
+            <div class="rwb-tooltip">Agende já</div>
+            <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+        </a>
     </div>
-   <style>
-            .card-container {
-                display: flex;
-                justify-content: space-around;
-                /* Ajusta o espaçamento entre os cards */
-                flex-wrap: wrap;
-                /* Faz com que os cards se ajustem em telas menores */
-                gap: 10px;
-                /* Espaço entre os cards */
-            }
+    <style>
+        #robbu-whatsapp-button {
+            position: fixed;
+            /* Fixa o botão na tela */
+            bottom: 20px;
+            /* Distância da parte inferior */
+            right: 20px;
+            /* Distância da parte direita */
+            z-index: 9999;
+            /* Garante que o botão fique acima de outros elementos */
+        }
 
-            .instagram-media {
-                flex: 1;
-                min-width: 300px;
-                /* Largura mínima dos cards */
-                max-width: 400px;
-                /* Largura máxima dos cards */
-            }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            /* Ajusta o espaçamento entre os cards */
+            flex-wrap: wrap;
+            /* Faz com que os cards se ajustem em telas menores */
+            gap: 10px;
+            /* Espaço entre os cards */
+        }
 
-            .zoom-card:hover {
-                transform: scale(1.05);
-                transition: transform 0.3s ease;
-            }
+        .instagram-media {
+            flex: 1;
+            min-width: 300px;
+            /* Largura mínima dos cards */
+            max-width: 400px;
+            /* Largura máxima dos cards */
+        }
 
-            .carousel-control-prev,
-            .carousel-control-next {
-                display: none !important;
-            }
-        </style>
+        .zoom-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            display: none !important;
+        }
+    </style>
     </div>
     </div>
     <div class="master_sobre">
@@ -1092,8 +1105,19 @@
                                                     <h1>Sobre mim</h1>
                                                     <hr>
                                                     <p>
-                                                        Olá, sou Luciana Lima, psicóloga (CRP - 06/67498) e formada há mais de 20 anos, com especializações em Constelação Sistêmica Integrativa, Coach e PNL (IBC - Instituto Brasileiro de Coach).
-                                                        Sou apaixonada pela minha profissão, que escolhi ainda no Ensino Médio. Realizo atendimentos para adultos, auxiliando nas dificuldades da vida e desafios emocionais, buscando proporcionar desenvolvimento pessoal e superação de obstáculos. Minha experiência com Constelação Sistêmica Integrativa ajuda meus clientes a compreenderem padrões familiares e a resolverem questões que impactam suas vidas. Trabalhei muitos anos com RH e tive a oportunidade de realizar um projeto internacional em Angola, onde fiz o mapeamento e treinamento de mais de 500 colaboradores na área da saúde.
+                                                        Olá, sou Luciana Lima, psicóloga (CRP - 06/67498) e formada há
+                                                        mais de 20 anos, com especializações em Constelação Sistêmica
+                                                        Integrativa, Coach e PNL (IBC - Instituto Brasileiro de Coach).
+                                                        Sou apaixonada pela minha profissão, que escolhi ainda no Ensino
+                                                        Médio. Realizo atendimentos para adultos, auxiliando nas
+                                                        dificuldades da vida e desafios emocionais, buscando
+                                                        proporcionar desenvolvimento pessoal e superação de obstáculos.
+                                                        Minha experiência com Constelação Sistêmica Integrativa ajuda
+                                                        meus clientes a compreenderem padrões familiares e a resolverem
+                                                        questões que impactam suas vidas. Trabalhei muitos anos com RH e
+                                                        tive a oportunidade de realizar um projeto internacional em
+                                                        Angola, onde fiz o mapeamento e treinamento de mais de 500
+                                                        colaboradores na área da saúde.
                                                     </p>
                                                 </div>
                                                 <div class="extra">
@@ -1114,7 +1138,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="footer-container">
                                     <footer class="bg-body-tertiary text-center">
                                         <div class="container p-4 pb-0">
