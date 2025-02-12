@@ -482,5 +482,11 @@ a {
   }
 }
 
+@media (max-width: 480px) {
+  .video-container {
+      width: 100%; /* Usa toda a largura da tela no mobile */
+      max-width: 320px; /* Reduz o tamanho máximo para ficar confortável */
+  }
+}
 
 
