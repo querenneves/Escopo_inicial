@@ -244,29 +244,41 @@
 }
 
 /* Efeito de hover */
-.insta:hover {
-    color: #C13584; /* Cor ao passar o mouse */
+@media (max-width: 720px) {
+    .insta {
+        font-size: 26px; /* Ícone menor */
+        right: 20px; /* Aproxima da borda */
+        top: 20px; /* Aproxima do topo */
+    }
 }
 
 /* 📱 Ajustes para telas menores que 600px */
 @media (max-width: 600px) {
     .insta {
-        font-size: 24px; /* Ícone menor */
-        right: 15px; /* Aproxima um pouco da borda */
-        top: 15px; /* Aproxima um pouco do topo */
+        font-size: 24px; /* Ícone um pouco menor */
+        right: 15px;
+        top: 15px;
     }
 }
 
 /* 📱 Ajustes para telas menores que 480px */
 @media (max-width: 480px) {
     .insta {
-        font-size: 22px; /* Ícone um pouco menor */
-        right: 10px; /* Distância da borda direita ajustada */
-        top: 10px; /* Distância do topo ajustada */
-        max-width: 100%; /* Garante que o ícone não ultrapasse a tela */
+        font-size: 22px; /* Ícone ainda menor */
+        right: 10px;
+        top: 10px;
+        max-width: 100%;
     }
 }
 
+/* 📱 Ajustes para telas menores que 360px (celulares bem compactos) */
+@media (max-width: 360px) {
+    .insta {
+        font-size: 20px; /* Ícone bem menor */
+        right: 8px;
+        top: 8px;
+    }
+}
 
 
         .avaliacoes-wrapper {
