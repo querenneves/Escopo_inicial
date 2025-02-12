@@ -233,38 +233,41 @@
 
 
         .insta {
-            font-size: 30px;
-            /* Tamanho do ícone */
-            color: #E1306C;
-            /* Cor do ícone do Instagram */
-            text-decoration: none;
-            /* Remove o sublinhado do link */
-            transition: color 0.3s;
-            /* Transição suave para mudança de cor */
-            position: fixed;
-            /* Permite que o elemento fique fixo na tela */
-            right: 20px;
-            /* Distância da borda direita */
-            top: 20px;
-            /* Distância do topo (ajuste conforme necessário) */
-            z-index: 1000;
-            /* Garante que o ícone fique acima de outros elementos */
-        }
+    font-size: 30px; /* Tamanho do ícone no desktop */
+    color: #E1306C; /* Cor do ícone do Instagram */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: color 0.3s; /* Transição suave para mudança de cor */
+    position: fixed; /* Fixa o ícone na tela */
+    right: 20px; /* Distância da borda direita */
+    top: 20px; /* Distância do topo */
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
 
-        /* Efeito de hover (opcional) */
-        .insta:hover {
-            color: #C13584;
-            /* Cor ao passar o mouse */
-        }
+/* Efeito de hover */
+.insta:hover {
+    color: #C13584; /* Cor ao passar o mouse */
+}
 
-        @media (max-width: 480px) {
-            .insta {
-                font-size: 20px;
-                /* Ícone menor para evitar sobreposição */
-                right: 5px;
-                top: 5px;
-            }
-        }
+/* 📱 Ajustes para telas menores que 600px */
+@media (max-width: 600px) {
+    .insta {
+        font-size: 24px; /* Ícone menor */
+        right: 15px; /* Aproxima um pouco da borda */
+        top: 15px; /* Aproxima um pouco do topo */
+    }
+}
+
+/* 📱 Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+    .insta {
+        font-size: 22px; /* Ícone um pouco menor */
+        right: 10px; /* Distância da borda direita ajustada */
+        top: 10px; /* Distância do topo ajustada */
+        max-width: 100%; /* Garante que o ícone não ultrapasse a tela */
+    }
+}
+
+
 
         .avaliacoes-wrapper {
             display: flex;
@@ -628,14 +631,16 @@
 
                 </p>
             </div>
-            <center><div class="video-sobre">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_lBpRF6Ef-E?si=hybMIa40ukKAIJbO" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            </div></center>
-            
+            <center>
+                <div class="video-sobre">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_lBpRF6Ef-E?si=hybMIa40ukKAIJbO"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </center>
+
             <div class="servicos">
                 <div class="card">
                     <img src="img/psicologia.jpeg" alt="Psicoterapia" />
@@ -758,7 +763,8 @@
                         <div class="contratar">
                             <div class="sub-c">
                                 <p class="tip">Abordagem personalizada</p>
-                                <p class="second-text">Atuando como psicóloga clínica e mentora, já realizei mais de 8 mil atendimentos, transformando a vida de milhares de pessoas.</p>
+                                <p class="second-text">Atuando como psicóloga clínica e mentora, já realizei mais de 8
+                                    mil atendimentos, transformando a vida de milhares de pessoas.</p>
                             </div>
                             <div class="sub-c">
                                 <p class="tip">Expertise em temas atuais</p>
@@ -1281,99 +1287,100 @@
                                         </a>
                                     </div>
                                 </center>
-                              <center> <div class="master_infop">
-                                    <div class="sub_infop">
-                                        <div class="image_infop">
-                                            <img src="img/luciana-sobre.png" alt="Luciana Lima">
-                                        </div>
-                                        <br>
-                                        <div class="master_sobre">
-                                            <div class="sub_sobre" style="margin: 20px 40px 20px 40px;">
-                                                <div class="text_sobre" style="margin-right: 20px;">
-                                                    <h1>Sobre mim</h1>
-                                                    <hr>
-                                                    <p>
-                                                        Olá, sou Luciana Lima, psicóloga (CRP - 06/67498) e formada há
-                                                        mais de
-                                                        20 anos, com especializações em Constelação Sistêmica
-                                                        Integrativa, Coach
-                                                        e PNL (IBC - Instituto Brasileiro de Coach).
-                                                        Sou apaixonada pela minha profissão, que escolhi ainda no Ensino
-                                                        Médio.
-                                                        Realizo atendimentos para adultos, auxiliando nas dificuldades
-                                                        da vida e
-                                                        desafios emocionais, buscando proporcionar desenvolvimento
-                                                        pessoal e
-                                                        superação de obstáculos.
-                                                        Minha experiência com Constelação Sistêmica Integrativa ajuda
-                                                        meus
-                                                        clientes a compreenderem padrões familiares e a resolverem
-                                                        questões que
-                                                        impactam suas vidas.
-                                                        Trabalhei muitos anos com RH e tive a oportunidade de realizar
-                                                        um
-                                                        projeto internacional em Angola, onde fiz o mapeamento e
-                                                        treinamento de
-                                                        mais de 500 colaboradores na área da saúde.
-
-                                                    </p>
-                                                </div>
-                                                <div class="extra" style="margin: 20px 40px 20px 40px;">
-
-                                                    <h1>Apoio pra você: </h1>
-                                                    <hr>
-                                                    <ul>
-                                                        <li>Psicoterapia Adulto;</li>
-                                                        <li>Terapia de Casal;</li>
-                                                        <li>Ansiedade e Pânico;</li>
-                                                        <li>Depressão;</li>
-                                                        <li>Autoestima;</li>
-                                                        <li>Mentoria para mulheres;</li>
-                                                        <li>Constelação Individual;</li>
-                                                        <li>Palestra e Treinamentos;</li>
-                                                    </ul>
-                                                </div></center>
-                                                <div class="footer-container">
-                                                    <footer class="bg-body-tertiary text-center">
-                                                        <div class="container p-4 pb-0">
-                                                            </a>
-                                                            <a class="btn text-white btn-floating m-1"
-                                                                style="background-color: #0082ca; border: 2px solid white;"
-                                                                href="https://www.linkedin.com/in/lucianalima1102/"
-                                                                role="button">
-                                                                <i class="fab fa-linkedin-in"></i>
-                                                            </a>
-                                                            <a class="btn text-white btn-floating m-1"
-                                                                style="background-color: #FF0000; border: 2px solid white;"
-                                                                href="https://www.youtube.com/channel/UCK8xgEKPYxXnK1FZQYogc4A"
-                                                                role="button" target="_blank">
-                                                                <i class="fab fa-youtube"></i>
-                                                            </a>
-                                                        </div>
-
-                                                </div>
-                                                <div class="text-center p-3"
-                                                    style="background-color: rgba(0, 0, 0, 0.05);">
-                                                    <span class="footer-text">Feito com ♥️ por Qneves</span>
-                                                </div>
-                                                </footer>
+                                <center>
+                                    <div class="master_infop">
+                                        <div class="sub_infop">
+                                            <div class="image_infop">
+                                                <img src="img/luciana-sobre.png" alt="Luciana Lima">
                                             </div>
+                                            <br>
+                                            <div class="master_sobre">
+                                                <div class="sub_sobre" style="margin: 20px 40px 20px 40px;">
+                                                    <div class="text_sobre" style="margin-right: 20px;">
+                                                        <h1>Sobre mim</h1>
+                                                        <hr>
+                                                        <p>
+                                                            Olá, sou Luciana Lima, psicóloga (CRP - 06/67498) e formada
+                                                            há
+                                                            mais de
+                                                            20 anos, com especializações em Constelação Sistêmica
+                                                            Integrativa, Coach
+                                                            e PNL (IBC - Instituto Brasileiro de Coach).
+                                                            Sou apaixonada pela minha profissão, que escolhi ainda no
+                                                            Ensino
+                                                            Médio.
+                                                            Realizo atendimentos para adultos, auxiliando nas
+                                                            dificuldades
+                                                            da vida e
+                                                            desafios emocionais, buscando proporcionar desenvolvimento
+                                                            pessoal e
+                                                            superação de obstáculos.
+                                                            Minha experiência com Constelação Sistêmica Integrativa
+                                                            ajuda
+                                                            meus
+                                                            clientes a compreenderem padrões familiares e a resolverem
+                                                            questões que
+                                                            impactam suas vidas.
+                                                            Trabalhei muitos anos com RH e tive a oportunidade de
+                                                            realizar
+                                                            um
+                                                            projeto internacional em Angola, onde fiz o mapeamento e
+                                                            treinamento de
+                                                            mais de 500 colaboradores na área da saúde.
 
-                                            <script async src="//www.instagram.com/embed.js"></script>
+                                                        </p>
+                                                    </div>
+                                                    <div class="extra" style="margin: 20px 40px 20px 40px;">
 
+                                                        <h1>Apoio pra você: </h1>
+                                                        <hr>
+                                                        <ul>
+                                                            <li>Psicoterapia Adulto;</li>
+                                                            <li>Terapia de Casal;</li>
+                                                            <li>Ansiedade e Pânico;</li>
+                                                            <li>Depressão;</li>
+                                                            <li>Autoestima;</li>
+                                                            <li>Mentoria para mulheres;</li>
+                                                            <li>Constelação Individual;</li>
+                                                            <li>Palestra e Treinamentos;</li>
+                                                        </ul>
+                                                    </div>
+                                </center>
+                                <div class="footer-container">
+                                    <footer class="bg-body-tertiary text-center">
+                                        <div class="container p-4 pb-0">
+                                            </a>
+                                            <a class="btn text-white btn-floating m-1"
+                                                style="background-color: #0082ca; border: 2px solid white;"
+                                                href="https://www.linkedin.com/in/lucianalima1102/" role="button">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                            <a class="btn text-white btn-floating m-1"
+                                                style="background-color: #FF0000; border: 2px solid white;"
+                                                href="https://www.youtube.com/channel/UCK8xgEKPYxXnK1FZQYogc4A"
+                                                role="button" target="_blank">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
                                         </div>
 
-                                    </div>
-                                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                                    <script
-                                        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-                                    <script
-                                        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-                                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                                    <script
-                                        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-                                    <script
-                                        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                                </div>
+                                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                                    <span class="footer-text">Feito com ♥️ por Qneves</span>
+                                </div>
+                                </footer>
+                            </div>
+
+                            <script async src="//www.instagram.com/embed.js"></script>
+
+                        </div>
+
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -481,11 +481,25 @@ a {
     white-space: nowrap; /* Evita quebra de palavras */
   }
 }
+.video-sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-@media (max-width: 480px) {
-  .video-container {
-      width: 100%; /* Usa toda a largura da tela no mobile */
-      max-width: 320px; /* Reduz o tamanho máximo para ficar confortável */
+.video-sobre iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-width: 560px;
+  max-height: 315px;
+}
+
+@media (max-width: 600px) {
+  .video-sobre iframe {
+      max-width: 480px; /* Largura padrão de celular */
+      max-height: 270px; /* Mantém a proporção 16:9 */
   }
 }
 
