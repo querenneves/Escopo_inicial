@@ -357,15 +357,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .sub_infop {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  max-width: 1000px;
   width: 100%;
+  max-width: 900px; /* Limita a largura máxima */
+  text-align: center;
 }
 
 .text_infop {
@@ -395,12 +399,16 @@ a {
 }
 
 .image_infop img {
-  max-width: 300px; /* Tamanho ideal para PC */
-  width: 100%; /* Permite ajuste responsivo */
+  width: 100%;
+  max-width: 300px; /* Limita a largura da imagem */
+  height: auto;
   border-radius: 10px;
-  animation: flutuar 3s ease-in-out infinite;
+  margin-bottom: 20px;
 }
-
+.master_sobre {
+  width: 100%;
+  padding: 0 15px;
+}
 /* Responsividade para mobile */
 @media (max-width: 768px) {
   .image_infop img {
@@ -451,36 +459,39 @@ a {
   width: 100%; /* A imagem ocupa 100% da largura do container */
 }
 }
-.extra {
-  width: 100%;
-  margin: 0 auto;
-  padding:0px;
+.sub_sobre, .extra {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.text_sobre h1, .extra h1 {
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
+ul li {
+  margin-bottom: 8px;
+}
 @media (max-width: 768px) {
-    .extra h1 {
-    width: 90%; /* Garante que o título ocupe toda a largura disponível */
-    margin: 0; /* Centraliza o título */
-    text-align: left; /* Centraliza o texto */
-    font-size: 17px; /* Ajusta o tamanho da fonte para caber na linha */
-    white-space: nowrap; /* Impede a quebra de linha */
-    overflow: hidden; /* Garante que o texto não ultrapasse a largura */
-    padding: 10px 0; /* Adiciona espaçamento acima e abaixo do título */
-    font-weight: bold;
-  }
-  .extra ul {
-    width: 100%; /* Faz a lista ocupar toda a largura da tela */
-    margin: 0 auto; /* Centraliza a lista */
-    padding: 0; /* Remove padding extra */
-    list-style-type: disc; /* Garante que as bolinhas apareçam */
-    list-style-position: inside; /* Garante que as bolinhas fiquem dentro da lista */
+  .master_infop {
+      padding: 10px;
   }
 
-  .extra li {
-    display: list-item; /* Garante que os itens da lista sejam exibidos corretamente */
-    text-align: left; /* Alinha o texto à direita */
-    padding: 5px 0; /* Adiciona espaçamento entre os itens */
-    white-space: nowrap; /* Evita quebra de palavras */
+  .sub_infop {
+      padding: 0 10px;
+  }
+
+  .image_infop img {
+      max-width: 80%;
+  }
+
+  .sub_sobre, .extra {
+      margin: 10px 0;
   }
 }
 .video-sobre {
