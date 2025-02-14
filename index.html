@@ -233,29 +233,33 @@
 
 
         .insta {
-            font-size: 30px;
-            /* Tamanho do ícone */
-            color: #E1306C;
-            /* Cor do ícone do Instagram */
-            text-decoration: none;
-            /* Remove o sublinhado do link */
-            transition: color 0.3s;
-            /* Transição suave para mudança de cor */
-            position: fixed;
-            /* Permite que o elemento fique fixo na tela */
-            right: 20px;
-            /* Distância da borda direita */
-            top: 20px;
-            /* Distância do topo (ajuste conforme necessário) */
-            z-index: 1000;
-            /* Garante que o ícone fique acima de outros elementos */
-        }
+  font-size: 30px; /* Tamanho padrão do ícone */
+  color: #E1306C; /* Cor do Instagram */
+  text-decoration: none;
+  transition: color 0.3s;
+  position: fixed;
+  right: 5vw; /* Usa unidade relativa para melhor adaptação */
+  top: 5vw;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Tamanho fixo */
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
 
-        /* Efeito de hover (opcional) */
-        .insta:hover {
-            color: #C13584;
-            /* Cor ao passar o mouse */
-        }
+/* Ajuste para telas pequenas (mobile) */
+@media (max-width: 392px) {
+  .insta {
+    font-size: 20px; /* Reduz o tamanho do ícone */
+    right: 2vw; /* Ajusta melhor a posição */
+    top: 2vw;
+    width: 40px;
+    height: 40px;
+  }
+}
 
 
         .avaliacoes-wrapper {
