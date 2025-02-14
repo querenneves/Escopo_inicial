@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   max-width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -11,14 +11,17 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: #ffffff;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden; /* Impede rolagem lateral */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; /* Centraliza os elementos na horizontal */
-  text-align: center; /* Centraliza o texto */
+  align-items: center; /* Centraliza elementos horizontalmente */
+  justify-content: flex-start; /* Mantém o topo visível */
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
+
   body:before {
     content: "";
     position: absolute;
@@ -49,12 +52,15 @@ body {
       text-decoration: none;
       transition: background-color 0.3s, color 0.3s; 
     }
-    @media (max-width: 392px) {
+    @media (max-width: 430px) {
       body {
-        font-size: 12px;
-        width: 100vw;
-        overflow-x: hidden; 
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px; /* Adiciona um pequeno espaço nas laterais */
+        overflow-x: hidden; /* Evita rolagem lateral */
       }
+    }
     
       .site-menu-toggle {
         font-size: 10px; /* Tamanho do botão ajustado */
@@ -67,6 +73,8 @@ body {
       align-items: center;
       text-align: center;
       max-width: 100%;
+      max-width: 360px;
+      padding: 10px;
     }
  
     
