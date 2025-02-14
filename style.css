@@ -3,6 +3,7 @@ body {
   background-color: #ffffff;
   min-height: 100vh;
   height: 200vh;
+  width: 100vw;
   position: relative;
   overflow-x: hidden;
  }
@@ -38,7 +39,9 @@ body {
     }
     @media (max-width: 392px) {
       body {
-        font-size: 12px; /* Fonte bem menor para ajustar ao tamanho pequeno da tela */
+        font-size: 12px;
+        width: 100vw;
+        overflow-x: hidden; 
       }
     
       .site-menu-toggle {
