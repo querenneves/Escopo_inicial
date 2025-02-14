@@ -1,17 +1,24 @@
 * {
   box-sizing: border-box;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", 
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: #ffffff;
   min-height: 100vh;
-  height: 200vh;
   width: 100vw;
-  position: relative;
-  overflow-x: hidden;
- }
+  overflow-x: hidden; /* Impede rolagem lateral */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza os elementos na horizontal */
+  text-align: center; /* Centraliza o texto */
+}
   body:before {
     content: "";
     position: absolute;
@@ -54,7 +61,14 @@ body {
         padding: 8px 12px; /* Ajuste de padding */
       }
     }
-
+    .container, .section, .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 100%;
+    }
+ 
     
 p {
   color: #000000;
@@ -482,9 +496,7 @@ a {
 .sub_sobre, .extra {
   margin: 20px 0;
   padding: 10px;
-  border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f9f9f9;
 }
 .text_sobre h1, .extra h1 {
   margin-bottom: 10px;
@@ -513,9 +525,8 @@ ul li {
   }
 
   .sub_sobre, .extra {
-    margin: 20px 0;
+    margin: 0;
     padding: 10px;
-    background-color: #f9f9f9;
     max-width: 800px; /* Limita a largura do conteúdo */
     width: 100%;
     word-wrap: break-word; /* Garante que o texto se quebre de forma adequada */
